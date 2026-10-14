@@ -1,0 +1,30 @@
+# .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.slnLaunch.user
+.vs/
+packages/
+TestResults/
+
+# Local secrets (real connection strings, JWT keys, seed passwords)
+appsettings.Development.json
+appsettings.*.local.json
+
+# Frontend
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.log

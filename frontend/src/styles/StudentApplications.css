@@ -1,0 +1,195 @@
+.student-applications-page {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f4f7fb;
+}
+
+/* Main Content */
+
+.applications-main-content {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.applications-header h1 {
+  margin: 0 0 6px;
+  color: #12355b;
+  font-size: 28px;
+}
+
+.applications-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Back Button */
+
+.back-dashboard-button {
+  padding: 10px 16px;
+  border: 1px solid #12355b;
+  border-radius: 7px;
+  background-color: white;
+  color: #12355b;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-dashboard-button:hover {
+  background-color: #12355b;
+  color: white;
+}
+
+/* Table Container */
+
+.applications-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Table */
+
+.applications-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.applications-table th {
+  padding: 15px;
+  background-color: #12355b;
+  color: white;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.applications-table td {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #444;
+  font-size: 13px;
+}
+
+.applications-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Status */
+
+.application-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+.status-approved {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.status-rejected {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+/* View Button */
+
+.view-application-button {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #12355b;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.view-application-button:hover {
+  background-color: #0d2947;
+}
+
+/* Search and Filter */
+
+.applications-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.application-search,
+.application-status-filter {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+
+.application-search {
+  flex: 1;
+  min-width: 0;
+}
+
+.application-search:focus,
+.application-status-filter:focus {
+  border-color: #12355b;
+}
+
+.no-applications {
+  padding: 30px !important;
+  text-align: center;
+  color: #6b7280 !important;
+}
+
+@media (max-width: 600px) {
+  .applications-filters {
+    flex-direction: column;
+  }
+
+  .application-search,
+  .application-status-filter {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .applications-main-content {
+    padding: 20px;
+  }
+
+  .applications-header {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .back-dashboard-button {
+    width: 100%;
+  }
+}

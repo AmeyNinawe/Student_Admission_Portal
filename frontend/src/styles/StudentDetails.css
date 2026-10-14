@@ -1,0 +1,308 @@
+.student-details-page {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f4f7fb;
+}
+
+/* Main Content */
+
+.student-details-main {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.student-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.student-details-header h1 {
+  margin: 0 0 6px;
+  color: #12355b;
+  font-size: 28px;
+}
+
+.student-details-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Back Button */
+
+.back-button {
+  padding: 10px 16px;
+  border: 1px solid #12355b;
+  border-radius: 7px;
+  background-color: white;
+  color: #12355b;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #12355b;
+  color: white;
+}
+
+/* Cards */
+
+.details-card {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.details-card h2 {
+  margin: 0 0 20px;
+  color: #12355b;
+  font-size: 19px;
+}
+
+/* Status */
+
+.status-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-card h2 {
+  margin-bottom: 8px;
+}
+
+.details-status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background-color: #fff7ed;
+  color: #c2410c;
+}
+
+.status-approved {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.status-rejected {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+/* Status Buttons */
+
+.status-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.status-buttons button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.approve-button {
+  background-color: #15803d;
+}
+
+.approve-button:hover {
+  background-color: #166534;
+}
+
+.reject-button {
+  background-color: #dc2626;
+}
+
+.reject-button:hover {
+  background-color: #b91c1c;
+}
+
+.pending-button {
+  background-color: #d97706;
+}
+
+.pending-button:hover {
+  background-color: #b45309;
+}
+
+/* Details Grid */
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.details-grid label {
+  display: block;
+  margin-bottom: 6px;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.details-grid p {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Photo & Signature */
+
+.photo-signature-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-box label {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.image-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: #f9fafb;
+}
+
+.image-box:nth-child(2) img {
+  width: 250px;
+  height: 100px;
+}
+
+/* Documents */
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.document-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+}
+
+.document-uploaded {
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.document-missing {
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.document-view-button {
+  margin-left: 10px;
+  padding: 5px 12px;
+  border: 1px solid #2864d7;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #2864d7;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.document-view-button:hover {
+  background: #2864d7;
+  color: #ffffff;
+}
+
+.status-remarks {
+  margin-top: 10px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.status-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .student-details-main {
+    padding: 20px;
+  }
+
+  .student-details-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+
+  .status-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .status-buttons {
+    width: 100%;
+  }
+
+  .status-buttons button {
+    flex: 1;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .status-buttons {
+    flex-direction: column;
+  }
+
+  .status-buttons button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+.academic-information-page {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.academic-information-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  color: #0f2747;
+  font-size: 30px;
+}
+
+.page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.academic-section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.academic-section h2 {
+  margin: 0 0 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #163b68;
+  font-size: 19px;
+}
+
+.optional-text {
+  margin: 0 0 20px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.academic-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.academic-group label {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  text-align: left;
+}
+
+.academic-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.academic-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.academic-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.academic-actions button {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+  background-color: #163b68;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.academic-actions button:hover {
+  background-color: #0f2d50;
+}
+
+@media (max-width: 700px) {
+  .academic-information-page {
+    padding: 25px 15px;
+  }
+
+  .academic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-section {
+    padding: 18px;
+  }
+
+  .page-header h1 {
+    font-size: 25px;
+  }
+}

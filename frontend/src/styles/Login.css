@@ -1,0 +1,183 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT SECTION */
+
+.login-left {
+  width: 45%;
+  background: #173b6c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.brand-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.brand-content h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.brand-content p {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.education-icon {
+  font-size: 100px;
+  margin-top: 40px;
+}
+
+.login-right {
+  width: 55%;
+  background: #f5f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: #172b4d;
+}
+
+.login-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+
+/* FORM */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5d9e2;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: black;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.login-form input::placeholder {
+  color: #888;
+  text-align: left;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2864d7;
+}
+
+
+/* OPTIONS */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.login-options a,
+.register-text a {
+  color: #2864d7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* BUTTON */
+
+.login-button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #2864d7;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #1d4fae;
+}
+
+
+/* REGISTER */
+
+.register-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left {
+    padding: 30px 20px;
+  }
+
+  .brand-content h1 {
+    font-size: 28px;
+  }
+
+  .education-icon {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .login-card {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 30px 0;
+  }
+}

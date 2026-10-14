@@ -1,0 +1,272 @@
+.dashboard-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 250px;
+  background: #173b6c;
+  color: white;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.sidebar-logo h2 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.sidebar-menu a {
+  color: #dce7f7;
+  text-decoration: none;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background: #2864d7;
+  color: white;
+}
+
+.logout-btn {
+  margin-top: auto;
+  border: none;
+  background: #ffffff18;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Main */
+
+.dashboard-main {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 35px 45px;
+}
+
+/* Header */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #173b6c;
+  font-size: 28px;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+  margin-top: 7px;
+}
+
+.student-info {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.student-info span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.student-info strong {
+  color: #173b6c;
+}
+
+/* Status */
+
+.status-card {
+  background: white;
+  padding: 22px 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px #00000008;
+  margin-bottom: 25px;
+}
+
+.status-card h3 {
+  margin: 0;
+  color: #173b6c;
+}
+
+.status-card p {
+  margin-bottom: 0;
+  color: #777;
+}
+
+.status-badge {
+  background: #fff3cd;
+  color: #856404;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-badge.approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Progress */
+
+.progress-section {
+  background: white;
+  padding: 22px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  font-size: 19px;
+  color: #173b6c;
+  margin: 0;
+}
+
+.section-heading span {
+  color: #777;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 9px;
+  background: #e6eaf0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 17%;
+  height: 100%;
+  background: #2864d7;
+}
+
+/* Cards */
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.application-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #00000008;
+}
+
+.card-icon {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.application-card h3 {
+  color: #173b6c;
+  margin: 0 0 8px;
+}
+
+.application-card p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.application-card a {
+  color: #2864d7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.application-card.completed {
+  border-left: 4px solid #2e9d62;
+}
+
+.application-card.completed span {
+  color: #2e9d62;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 210px;
+  }
+
+  .dashboard-main {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+    padding: 25px;
+  }
+
+  .application-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
